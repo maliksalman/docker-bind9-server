@@ -1,0 +1,8 @@
+zone "lan.test" {
+    type master;
+    file "/etc/bind/db.lan.test";
+};
+zone "nip.io" {
+	type forward;
+	forwarders { 8.8.8.8; };
+};
